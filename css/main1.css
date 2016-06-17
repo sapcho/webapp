@@ -1,0 +1,61 @@
+
+.menu-hint p {
+    text-decoration: none;
+    color: #F26D6D;
+    font: 1.5em sans-serif;
+    display: block;
+    border: .1em #B3B87F solid;
+}
+
+.menu:hover .action-list {
+    display: block;
+}
+
+.menu-hint:hover {
+    color: green;
+}
+
+
+.nav-section .action-list {
+    display: none;
+}
+.menu ul {
+    position: absolute;
+    width: 100px;
+    left: 0%;
+}
+.nav-section ul {
+    padding: 0;
+}
+.action-list {
+    margin: 1px 0;
+    text-align: left;
+    padding: 2%;
+    box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+    z-index: 90;
+    position: absolute;
+    left: 50%;
+}
+
+
+/*@supports (not ((flex-flow) or (-webkit-box-flow) or (-moz-box-flow) or (-ms-flexbox-flow) or (-webkit-flex-flow))) {
+    nav ul {
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    nav ul li ul {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+nav ul li a:visited {
+    color: #F26D6D;
+    text-decoration:none;
+}
+nav ul li:hover a:visited {
+    color: #FFF;
+}*/
