@@ -6,9 +6,7 @@ html {
 
 body {
     width: 100%;
-    background-image: url('../img/body-background.jpg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background: url('../img/body-background.jpg') no-repeat fixed;
     background-size: cover;
 }
 
@@ -44,16 +42,14 @@ nav {
 }
 
 .nav-section {
-
     width: 33%;
     height: 130px;
     display: flex;
-    background: white;
     flex-direction: column;
 }
 
 /*Background of big boxes*/
-.nav-section > p {
+.nav-section > p{
     background: black;
     width: 100%;
     height: 100px;
@@ -64,6 +60,8 @@ nav {
     align-items: baseline;
     justify-content: center;
     padding-top: 2%;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
 }
 
 .menu-hint {
@@ -80,20 +78,20 @@ nav {
      display: flex;
      width: 0;
      height: 0;
-     border-left: 10px solid transparent;
-     border-right: 10px solid transparent;
-     border-top: 10px solid black;
+     border-left: 5px solid transparent;
+     border-right: 5px solid transparent;
+     border-top: 5px solid black;
      opacity: 0.8;
-     margin: 4%;
+     margin: 5%;
 }
 
 /*.menu:hover {
     display: flex;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
     opacity: 0.8;
     margin: 4%;
 }*/
@@ -108,11 +106,18 @@ nav {
     display: none;
 }
 
-.tabs {
-    width: 100%;
+.tabs div{
+    display: none;
 }
 
-.menu:hover .action-list {
+.tabs div:target {
+    display: block;
+    background: #ededed;
+    width: 100%;
+    height: 400px;
+}
+
+.nav-section:hover .action-list {
     display: block;
 }
 
@@ -121,7 +126,8 @@ nav {
 }
 .menu ul {
     position: absolute;
-    width: 20%;
+    width: 25%;
+    color: #86847b;
 }
 .nav-section ul {
     padding: 0;
@@ -134,22 +140,39 @@ nav {
     z-index: 999;
     position: absolute;
     width: 100%;
-    background: #ffffff;
+    background: #fefefe;
+    color: #86847b;
+}
+
+/*big icons*/
+.icons {
+    overflow: hidden;
+    margin: 0 auto;
+    background: black;
+}
+
+.nav-section > .icons {
+    background: black;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
 }
 
 .action-list li {
     padding: 2%;
-    border-bottom: 0.1px black solid;
+    border-bottom: 0.1px #deded8 solid;
     list-style: none;
 }
 
 .action-list li a {
     text-decoration: none;
-    color: black;
+    color: #86847b;
 }
 
 .action-list li:hover {
-    background: orange;
 }
 
 ul {
@@ -162,8 +185,8 @@ ul {
 
 }
 
-.tabs li {
-    background: #ebebeb;
+.tabs li{
+    background: #6e6e6e;
     list-style: none;
     margin-top: 10px;
     width: 24%;
@@ -172,19 +195,32 @@ ul {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border-top-left-radius: 0.2em;
+    border-top-right-radius: 0.2em;
 }
 
-.tabs li a:before {
+.tabs li:hover {
+    background: #ededed;
+}
+
+.tabs li:before {
     content: url("../img/icons/settings.png");
-    width: 10%;
+    width: 10px;
     height: auto;
+    margin-right: 2%;
 }
 
-.tabs  div{
-    display: block;
-    background: black;
-    width: 100%;
-    height: 100px;
+.tabs li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    margin-left: 5%;
+    color: #ededed;
 }
 
+.tabs li a:hover {
+    color: #86847b;
 
+}
