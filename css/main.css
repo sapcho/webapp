@@ -125,32 +125,58 @@ nav {
     height: 400px;
 }*/
 
+
 /*tab #1*/
 #quick-reports > ul {
     display: flex;
-    align-content: space-around;
+    align-content: center;
     flex-direction: column;
     background: #fefefe;
     list-style: none;
-    width: 80%;
+    width: 95%;
     height: 60%;
     margin: 0 auto;
+    padding-left: 0;
+}
+
+ul .reports {
+    margin-top: 100px;
 }
 
 .reports > li {
     display: flex;
-    align-content: space-between;
+    /*align-content: space-between;*/
+    justify-content: space-between;
     flex-direction: row;
-
     background: #dfdddd;
     list-style: none;
-    width: 80%;
-    margin-bottom: 10px;
+    width: 90%;
+    padding-right: 3%;
+    padding-left: 3%;
+    margin: 0 auto 10px;
 }
 
-.reports > li > a, .search-box{
+.reports > li:nth-child(1) {
+    margin-top: 20px;
+}
+
+.reports > li > div, .search-box{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+/*search box tab 1*/
+.reports .name .search-box input {
+    width: 200px;
+}
+
+.reports .mail .search-box input {
+    width: 400px;
+}
+
+.reports .name a, .reports .mail a {
+    padding-right: 3%;
 }
 
 .nav-section:hover .action-list {
