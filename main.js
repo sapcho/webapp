@@ -11,8 +11,6 @@ function showExternal() {
     site.innerHTML = '<object type="text/html" data="http://www.one.co.il" ></object>';
 }
 
-myfolders.addEventListener('click', showExternal);
-
 
 function showExternal() {
     console.log('hi1');
