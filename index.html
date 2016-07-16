@@ -19,7 +19,7 @@ Implement:
     <title>Webapp</title>
 
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/newmain.css">
     <!--<link rel="stylesheet" type="text/css" href="css/main1.css">-->
 
     <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
@@ -103,11 +103,11 @@ Implement:
         <ul>
             <li><a href="#quick-reports">Quick Reports</a>
             </li>
-            <li><a href="#fmy-folders">My Folders</a>
+            <li><a href="#fmy-folders" id="myfolders">My Folders</a>
             </li>
             <li><a href="#my-team-folders">My Team Folders</a>
             </li>
-            <li><a href="#public-folders">Public Folders</a>
+            <li><a href="#public-folders" id="publicfolders">Public Folders</a>
             </li>
         </ul>
         <div id="quick-reports">
@@ -121,9 +121,9 @@ Implement:
                         </form>
                     </div>
                     <div class="mail">
-                        <a>Email</a>
+                        <a>URL</a>
                         <form class="search-box" method="get" action="http://www.google.com">
-                            <input type="search" name="q" placeholder="name">
+                            <input type="search" name="q" placeholder="URL">
                         </form>
                     </div>
                 </li>
@@ -136,9 +136,9 @@ Implement:
                         </form>
                     </div>
                     <div class="mail">
-                        <a>Email</a>
+                        <a>URL</a>
                         <form class="search-box" method="get" action="http://www.google.com">
-                            <input type="search" name="q" placeholder="name">
+                            <input type="search" name="q" placeholder="URL">
                         </form>
                     </div>
                 </li>
@@ -151,18 +151,77 @@ Implement:
                         </form>
                     </div>
                     <div class="mail">
-                        <a>Email</a>
+                        <a>URL</a>
+                        <form class="search-box" method="get" action="http://www.google.com">
+                            <input type="search" name="q" placeholder="URL">
+                        </form>
+                    </div>
+                </li>
+
+                <button id="submit-form-my">Save</button>
+            </ul>
+        </div>
+        <div id="fmy-folders">
+            <div id="external-site-my"></div>
+        </div>
+        <div id="my-team-folders">
+            <ul class="reports">
+                <li>
+                    <p>Report 01</p>
+                    <div class="name">
+                        <a>Name</a>
                         <form class="search-box" method="get" action="http://www.google.com">
                             <input type="search" name="q" placeholder="name">
                         </form>
                     </div>
+                    <div class="mail">
+                        <a>URL</a>
+                        <form class="search-box" method="get" action="http://www.google.com">
+                            <input type="search" name="q" placeholder="URL">
+                        </form>
+                    </div>
                 </li>
+                <li>
+                    <p>Report 02</p>
+                    <div class="name">
+                        <a>Name</a>
+                        <form class="search-box" method="get" action="http://www.google.com">
+                            <input type="search" name="q" placeholder="name">
+                        </form>
+                    </div>
+                    <div class="mail">
+                        <a>URL</a>
+                        <form class="search-box" method="get" action="http://www.google.com">
+                            <input type="search" name="q" placeholder="URL">
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <p>Report 03</p>
+                    <div class="name">
+                        <a>Name</a>
+                        <form class="search-box" method="get" action="http://www.google.com">
+                            <input type="search" name="q" placeholder="name">
+                        </form>
+                    </div>
+                    <div class="mail">
+                        <a>URL</a>
+                        <form class="search-box" method="get" action="http://www.google.com">
+                            <input type="search" name="q" placeholder="URL">
+                        </form>
+                    </div>
+                </li>
+
+                <button id="submit-form-public">Save</button>
             </ul>
         </div>
-        <div id="fmy-folders">22222</div>
-        <div id="my-team-folders">33333</div>
-        <div id="public-folders">44444</div>
+        <div id="public-folders">
+            <div id="external-site-public"></div>
+        </div>
     </div>
 </div>
+
+<script src="main.js"></script>
+
 </body>
 </html>
