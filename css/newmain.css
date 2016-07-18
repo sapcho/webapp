@@ -314,7 +314,7 @@ ul .reports {
 
 .tabs > ul li a {
     text-decoration: none;
-    color: black;
+    /*color: black;*/
     display: flex;
     justify-content: space-around;
     margin-top: 0;
@@ -363,7 +363,7 @@ ul .reports {
 
 div.icon {display: none;}
 
-@media (max-width: 414px) {
+@media (max-width: 250px) {
     .search-box {
         display: none;
     }
