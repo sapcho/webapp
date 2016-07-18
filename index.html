@@ -44,8 +44,8 @@ Implement:
     <div class="notifications">
     </div>
     <nav>
-        <div class="nav-section">
-            <p>Select Reporting Platform</p>
+        <div class="nav-section" id="test">
+            <p onclick="toggle_visibility('myDropdown')">Select Reporting Platform</p>
             <div class="icons">
                 <a href="#">
                     <img src="img/icons/action-report-new.png">
@@ -56,7 +56,7 @@ Implement:
                     <p>Choose QS report</p>
                     <div class="arrow"></div>
                 </div>
-                <ul class="action-list sub">
+                <ul class="action-list" id="myDropdown">
                     <li><a href="#">Corporate</a></li>
                     <li><a href="#">Simple</a></li>
                     <li><a href="#">Business</a></li>
@@ -76,7 +76,7 @@ Implement:
                     <p>Choose dashboard</p>
                     <div class="arrow"></div>
                 </div>
-                <ul class="action-list sub">
+                <ul class="action-list">
                     <li><a href="#">Acount Dashboard</a></li>
                     <li><a href="#">Daily Huddle Dashboard</a></li>
                     <li><a href="#">Teir 2 Dashboard</a></li>
@@ -96,7 +96,7 @@ Implement:
                     <p>Choose guide</p>
                     <div class="arrow"></div>
                 </div>
-                <ul class="action-list sub">
+                <ul class="action-list">
                     <li><a href="#">Real Time</a></li>
                     <li><a href="#">Past Data</a></li>
                     <li><a href="#">Corporate Data</a></li>

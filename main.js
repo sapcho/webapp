@@ -1,9 +1,33 @@
-
+//add class responsive to main div
 function myFunction() {
     document.getElementsByClassName("top")[0].classList.toggle("responsive");
 }
 
+function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block') {
+        e.style.display = 'none';
+    } else {
+        e.style.display = 'block';
+    }
+}
 
+/*document.getElementById("myDropdown").classList.toggle("show");
+
+// Close the dropdown if the user clicks outside of it
+document.getElementById("test").onclick = function(event) {
+    if (!event.target.matches('.nav-section')) {
+
+        var dropdowns = document.getElementsByClassName("action-list");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}*/
 
 var click = new Event ('myfolders');
 var click = new Event ('publicfolders');
