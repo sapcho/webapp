@@ -368,7 +368,11 @@ div.icon {display: none;}
         display: none;
     }
 
-    .top div:not(:first-child) {
+    .page-body {
+        padding: 0;
+    }
+
+    .tabs ul {
         display: none;
     }
 
@@ -390,13 +394,65 @@ div.icon {display: none;}
         display: none;
     }
 
-    .top .responsive div .icon {
+    div.layout-wrap.top.responsive .nav-section{
+        display: flex;
+    }
+
+    div.layout-wrap.top.responsive .nav-section p,
+    div.layout-wrap.top.responsive .nav-section .icons{
+        display: none;
+    }
+
+    div.layout-wrap.top.responsive .nav-section {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        background: black;
+    }
+
+    /*.top .responsive div .icon {
         position: relative;
     }
 
     div.layout-wrap.top.responsive {
         background: black;
         opacity: 0.5;
+        height: 100px;
+    }s
+
+    div.layout-wrap.top.responsive nav .menu {
+        background: white;
+        height: 100%;
+    }
+
+    div.layout-wrap.top.responsive .menu-hint{
+        color: #fefefe;
+        text-align: left;
+        padding-left: 1%;
+        font-size: 1.2rem;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        background: black;
+        height: 100%;
+
+    }
+
+    div.layout-wrap.top.responsive nav .menu-hint .arrow {
+        display: none;
+    }
+
+    div.layout-wrap.top.responsive.action-list {
+        text-align: left;
+        padding: 0;
+        box-shadow: 0px 3px 2px -1px rgba(0,0,0,0.75);
+        z-index: 999;
+        position: absolute;
+        background: black;
+        color: #86847b;
+        margin: 0 0 1px;
+        width: 24%;
     }
 
     div.top.responsive .nav-section {
@@ -412,7 +468,7 @@ div.icon {display: none;}
 
     div.page-body.layout-wrap.top.responsive .nav-section {
         display: flex;
-        /*justify-content: ;*/
+        justify-content: ;
         flex-direction: column;
         width: 98%;
         height: 30px;
@@ -441,7 +497,8 @@ div.icon {display: none;}
         position: absolute;
         right: 1.5%;
         cursor: pointer;
-    }
+    }*/
+
     .show {display:block;}
 }
 
